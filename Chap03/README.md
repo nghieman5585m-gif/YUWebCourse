@@ -43,7 +43,7 @@ h1이 가장 큰 제목 태그이고, h6이 가장 작은 제목 태그이다.
 </body>
 ```
 
-## 앵커 태그
+### 앵커 태그
 
 - a 태그는 anchor를 의미한다.
 - 다른 웹 페이지나 웹 페이지 내부의 특정 위치로 이동할 때 사용한다.
@@ -63,3 +63,16 @@ h1이 가장 큰 제목 태그이고, h6이 가장 작은 제목 태그이다.
     <p>Phasellus sem tortor, volutpat vitae euismod eget, sagittis sed</p>
 </body>
 ```
+
+### 글자 모양 태그
+
+글자 모양 태그는 단독으로 사용하거나, 다른 글자 모양 태그도 넣을 수 있다.
+
+- b (bold) : 굵은 글자
+- i (italic) : 기울어진 글자
+- small : 작은 글자
+- sub (subscript) : 아래 첨자
+- sup (superscript) : 위 첨자
+- ins (insert) : 밑줄 글자
+- del (delete) : 취소선이 그어진 글자
+
