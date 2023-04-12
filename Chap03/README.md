@@ -4,6 +4,7 @@
 <summary>Table of Contents</summary>
 
 - [글자 태그](#글자-태그)
+- [목록 태그](#목록-태그)
 
 </details>
 
@@ -75,4 +76,71 @@ h1이 가장 큰 제목 태그이고, h6이 가장 작은 제목 태그이다.
 - sup (superscript) : 위 첨자
 - ins (insert) : 밑줄 글자
 - del (delete) : 취소선이 그어진 글자
+
+```
+<body>
+    <h1><b>Lorem ipsum dolor sit amet</b></h1>
+    <h1><i>Lorem ipsum dolor sit amet</i></h1>
+    <h1><small>Lorem ipsum dolor sit amet</small></h1>
+    <h1>Lorem ipsum dolor<sub>sit amet</sub></h1>
+    <h1>Lorem ipsum dolor<sup>sit amet</sup></h1>
+    <h1><ins>Lorem ipsum dolor sit amet</ins></h1>
+    <h1><del>Lorem ipsum dolor sit amet</del></h1>
+    <hr>
+    <b>Lorem ipsum dolor sit amet</b><br>
+    <i>Lorem ipsum dolor sit amet</i><br>
+    <small>Lorem ipsum dolor sit amet</small><br>
+    Lorem ipsum dolor<sub>sit amet</sub><br>
+    Lorem ipsum dolor<sup>sit amet</sup><br>
+    <ins>Lorem ipsum dolor sit amet</ins><br>
+    <del>Lorem ipsum dolor sit amet</del><br>
+</body>
+```
+
+## 목록 태그
+
+### 목록 태그 활용
+
+내비게이션 메뉴를 만들 때는 주로 목록 태그를 사용한다.
+
+- ul (unordered list) : 순서가 없는 목록 생성
+- ol (ordered list) : 순서가 있는 목록 생성
+- li (list item) : 목록 요소 생성
+
+```
+<body>
+    <ul>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ul>
+
+    <ol>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ol>
+
+    <ul>
+        <!-- 첫 번째 목록 -->
+        <li>
+            <b>과일</b>
+            <ol>
+                <li>사과</li>
+                <li>바나나</li>
+                <li>오렌지</li>
+            </ol>
+        </li>
+        <!-- 두 번째 목록 -->
+        <li>
+            <b>채소</b>
+            <ol>
+                <li>상추</li>
+                <li>치커리</li>
+                <li>양배추</li>
+            </ol>
+        </li>
+    </ul>
+</body>
+```
 
