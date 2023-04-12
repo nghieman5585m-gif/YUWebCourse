@@ -43,3 +43,23 @@ h1이 가장 큰 제목 태그이고, h6이 가장 작은 제목 태그이다.
 </body>
 ```
 
+## 앵커 태그
+
+- a 태그는 anchor를 의미한다.
+- 다른 웹 페이지나 웹 페이지 내부의 특정 위치로 이동할 때 사용한다.
+- href는 hyper reference를 의미한다.
+
+```
+<body>
+    <a href="#alpha">Alpha 부분</a>
+    <a href="#beta">Beta 부분</a>
+    <a href="#gamma">Gamma 부분</a>
+    <hr>
+    <h1 id="alpha">Alpha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h1 id="beta">Beta</h1>
+    <p>Vivamus elementum pretium tortor, in tincidunt mauris gravida et.</p>
+    <h1 id="gamma">Gamma</h1>
+    <p>Phasellus sem tortor, volutpat vitae euismod eget, sagittis sed</p>
+</body>
+```
