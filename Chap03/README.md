@@ -28,3 +28,18 @@ h1이 가장 큰 제목 태그이고, h6이 가장 작은 제목 태그이다.
     <h6>제목 글자 태그 6</h6>
 </body>
 ```
+
+### 본문 단락 구분
+
+각 p 태그로 문단을 하나씩 만들 수 있다.
+
+```
+<body>
+    <h1>제목 글자</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of
+        type and scrambled it to make a type specimen book.</p>
+</body>
+```
+
