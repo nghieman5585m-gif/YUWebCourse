@@ -5,6 +5,7 @@
 
 - [글자 태그](#글자-태그)
 - [목록 태그](#목록-태그)
+- [테이블 태그](#테이블-태그)
 
 </details>
 
@@ -143,4 +144,57 @@ h1이 가장 큰 제목 태그이고, h6이 가장 작은 제목 태그이다.
     </ul>
 </body>
 ```
+
+## 테이블 태그
+
+표를 만들 때는 테이블 태그를 사용한다.
+
+- table : 표 삽입
+- tr (table row) : 표에 행 삽입
+- th (table heading) : 표의 제목 셀 생성
+- td (table data) : 표의 일반 셀 생성
+
+### 시간표 만들기
+
+테이블 태그는 아래와 같은 속성을 사용할 수 있다.
+
+- table border : 표의 테두리 두께 지정
+- th, td의 colspan, rowspan : 셀의 너비, 높이 지정
+
+```
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1교시</td>
+                <td>영어</td>
+                <td>국어</td>
+                <td>과학</td>
+                <td>미술</td>
+                <td>기술</td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td>도덕</td>
+                <td>체육</td>
+                <td>영어</td>
+                <td>수학</td>
+                <td>사회</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+```
+
+### 행렬 병합 표 생성
 
