@@ -65,3 +65,200 @@
 2. 정답 : __source__
 3. content (웹 컨텐츠에서 제공하는 정보의 유형을 지정한다. `meta` 태그의 속성으로 사용된다.)
 4. media (`link` 태그와 함꼐 사용되며 미디어 타입을 지정한다. `media="print"`를 지정하면 인쇄용으로 지정된다.)
+
+### 08. 클릭하면 다음 링크로 이동하는 a 태그를 작성하시오.
+1. 한빛미디어 웹 사이트(http://www.hanbit.co.kr)
+>```<a href="http://www.hanbit.co.kr">한빛미디어 웹 사이트</a>```
+>
+><a href="http://www.hanbit.co.kr">한빛미디어 웹 사이트</a>
+2. 네이버 메인 페이지(http://www.naver.com)
+>```<a href="http://www.naver.com">네이버 메인 페이지</a>```
+>
+><a href="http://www.naver.com">네이버 메인 페이지</a>
+3. 구글 메인 페이지(https://www.google.com)
+>```<a href="http://www.google.com">구글 메인 페이지</a>```
+>
+><a href="http://www.google.com">구글 메인 페이지</a>
+4. 자신의 대학 웹 사이트
+>```<a href="http://csi.yu.ac.kr/">영남대학교 차세대컴퓨터시스템연구실</a>```
+>
+><a href="http://csi.yu.ac.kr/">영남대학교 차세대컴퓨터시스템연구실</a>
+
+### 09. 다음과 같이 폴더를 구성했을 때, 클릭하면 한빛미디어 웹 사이트로 이동하도록 이미지가 포함된 a 태그를 작성하시오.
+<img src="https://github.com/Toygoon/CookbookHTML5/raw/main/Chap03/practice/09_image.png"> <img src="https://github.com/Toygoon/CookbookHTML5/raw/main/Chap03/practice/09_file.png">
+>```<a href="https://www.hanbit.co.kr/"><img src="./09_image.png"></a>```
+>
+><a href="https://www.hanbit.co.kr/"><img src="https://github.com/Toygoon/CookbookHTML5/raw/main/Chap03/practice/09_image.png"></a>
+
+### 10. 다음과 같은 웹 페이지를 생성하시오.
+<img src="https://github.com/Toygoon/CookbookHTML5/raw/main/Chap03/practice/10_image.png">
+
+><h1>HTML5 Basic</h1>
+><h3>ITCookbook - HanbitAcademy</h3>
+><hr>
+><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+>dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+>book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+>unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+>recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    ... 중략 ...
+
+    <h1>HTML5 Basic</h1>
+    <h3>ITCookbook - HanbitAcademy</h3>
+    <hr>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    ... 중략 ...
+
+### 11. 다음 목록을 생성하시오.
+<img src="https://github.com/Toygoon/CookbookHTML5/raw/main/Chap03/practice/11_image.png">
+
+>    <ul>
+>        <li>따뜻한 음료</li>
+>        <ol>
+>            <li>커피</li>
+>            <li>녹차</li>
+>            <li>둥굴레차</li>
+>        </ol>
+>        <li>차가운 음료</li>
+>        <ol>
+>            <li>커피</li>
+>            <li>스무디</li>
+>           <li>식혜</li>
+>        </ol>
+>    </ul>
+
+    <ul>
+        <li>따뜻한 음료</li>
+        <ol>
+            <li>커피</li>
+            <li>녹차</li>
+            <li>둥굴레차</li>
+        </ol>
+        <li>차가운 음료</li>
+        <ol>
+            <li>커피</li>
+            <li>스무디</li>
+            <li>식혜</li>
+        </ol>
+    </ul>
+
+### 12. 다음 표를 생성하시오.
+<img src="https://github.com/Toygoon/CookbookHTML5/raw/main/Chap03/practice/12_image.png">
+
+<table border="1">
+    <tr>
+        <th colspan="6">한국의 차</th>
+    </tr>
+    <tr>
+        <th rowspan="6">뿌리차</th>
+        <td>인삼차</td>
+        <th rowspan="9">과일차</th>
+        <td>수정과</td>
+        <th rowspan="5">잎차</th>
+        <td>뽕잎차</td>
+    </tr>
+    <tr>
+        <td>당귀차</td>
+        <td>유자차</td>
+        <td>감잎차</td>
+    </tr>
+    <tr>
+        <td>생강차</td>
+        <td>구기자차</td>
+        <td>솔잎차</td>
+    </tr>
+    <tr>
+        <td>칡차</td>
+        <td>대추차</td>
+        <td>국화차</td>
+    </tr>
+    <tr>
+        <td>둥굴레차</td>
+        <td>오미자차</td>
+        <td>이슬차</td>
+    </tr>
+    <tr>
+        <td>마차</td>
+        <td>매실차</td>
+        <th rowspan="4">기타</th>
+        <td>두충차</td>
+    </tr>
+    <tr>
+        <th rowspan="3">곡물차</th>
+        <td>보리차</td>
+        <td>모과차</td>
+        <td>영지버섯차</td>
+    </tr>
+    <tr>
+        <td>옥수수차</td>
+        <td>산수유차</td>
+        <td>귤강차</td>
+    </tr>
+    <tr>
+        <td>현미차</td>
+        <td>탱자차</td>
+        <td>쌍화차</td>
+    </tr>
+</table>
+
+    <table border="1">
+        <tr>
+            <th colspan="6">한국의 차</th>
+        </tr>
+        <tr>
+            <th rowspan="6">뿌리차</th>
+            <td>인삼차</td>
+            <th rowspan="9">과일차</th>
+            <td>수정과</td>
+            <th rowspan="5">잎차</th>
+            <td>뽕잎차</td>
+        </tr>
+        <tr>
+            <td>당귀차</td>
+            <td>유자차</td>
+            <td>감잎차</td>
+        </tr>
+        <tr>
+            <td>생강차</td>
+            <td>구기자차</td>
+            <td>솔잎차</td>
+        </tr>
+        <tr>
+            <td>칡차</td>
+            <td>대추차</td>
+            <td>국화차</td>
+        </tr>
+        <tr>
+            <td>둥굴레차</td>
+            <td>오미자차</td>
+            <td>이슬차</td>
+        </tr>
+        <tr>
+            <td>마차</td>
+            <td>매실차</td>
+            <th rowspan="4">기타</th>
+            <td>두충차</td>
+        </tr>
+        <tr>
+            <th rowspan="3">곡물차</th>
+            <td>보리차</td>
+            <td>모과차</td>
+            <td>영지버섯차</td>
+        </tr>
+        <tr>
+            <td>옥수수차</td>
+            <td>산수유차</td>
+            <td>귤강차</td>
+        </tr>
+        <tr>
+            <td>현미차</td>
+            <td>탱자차</td>
+            <td>쌍화차</td>
+        </tr>
+    </table>
