@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const rawInput = prompt('태어난 해를 입력해주세요', ''),
+            year = Number(rawInput) - 4,
+            stems = ['갑', '을', '병', '정', '무', '기', '경', '신', '임', '계', '갑', '을'],
+            zodiacs = ['자', '축', '인', '묘', '진', '사', '오', '미', '신', '유', '술', '해'];
+
+        alert(`${year + 4}년은 ${stems[year % 10]}${zodiacs[year % 12]}년입니다.`)
+    </script>
+</body>
+
+</html>
