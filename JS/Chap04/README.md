@@ -1,10 +1,10 @@
-# Chapter 03. 반복문
+# Chapter 04. 반복문
 
 <details>
 <summary>Table of Contents</summary>
 
-- [03-1 if 조건문](#03-1-if-조건문)
-- [03-2 switch 조건문과 짧은 조건문](#3-2-switch-조건문과-짧은-조건문)
+- [04-1 배열](#04-1-배열)
+- [04-2-반복문](#04-2-반복문)
 
 </details>
 
