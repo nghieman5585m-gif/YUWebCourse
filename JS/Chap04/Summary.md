@@ -245,3 +245,49 @@ for (const VARIABLE of OBJECT) {
 
 ### 4. 활용 예제의 피라미드를 활용해서 다음과 같은 피라미드를 만들어보세요.
 
+```
+<script>
+    let output = '';
+    const size = 5;
+
+    let tmp = 0, stars = [];
+    const len = size * 2 - 1;
+    for (let i = 1; i < size; i++) {
+        stars.push(i + tmp);
+        tmp++;
+    }
+
+    for (let i = size - 2; i >= 0; i--)
+        stars.push(stars[i]);
+
+    stars.splice(size - 1, 0, len);
+
+    for (const i of stars) {
+        output = '';
+        const spaces = len - i;
+
+        for (let j = 0; j < spaces / 2; j++)
+            output += ' ';
+
+        for (let j = 0; j < i; j++)
+            output += '*';
+        
+        for (let j = 0; j < spaces / 2; j++)
+            output += ' ';
+
+        console.log(output);
+    }
+</script>
+```
+
+```
+     *    
+    ***   
+   *****  
+  ******* 
+ *********
+  ******* 
+   *****  
+    ***   
+     *
+```
