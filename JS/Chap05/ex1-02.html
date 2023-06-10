@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        const max = function (array) {
+            let output = array[0];
+
+            for (const i of array) {
+                if (output < i)
+                    output = i;
+            }
+
+            return output;
+        }
+
+        console.log(max([1, 2, 3, 4]));
+        */
+
+        /*
+        const max = function (...array) {
+            let output = array[0];
+
+            for (const i of array) {
+                if (output < i)
+                    output = i;
+            }
+
+            return output;
+        }
+
+        console.log(max(1, 2, 3, 4));
+        */
+
+        const max = function (...array) {
+            let items = array;
+
+            if (Array.isArray(array[0])) {
+                items = array[0];
+            }
+
+            let output = items[0];
+
+            for (const i of items) {
+                if (output < i)
+                    output = i;
+            }
+
+            return output;
+        }
+
+        console.log(max(1, 2, 3, 4));
+        console.log(max([1, 2, 3, 4]));
+    </script>
+</body>
+
+</html>
