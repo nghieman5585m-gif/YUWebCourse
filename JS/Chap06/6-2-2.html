@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        String.prototype.contain = function (str) {
+            return this.indexOf(str) >= 0;
+        }
+
+        Array.prototype.contain = function (item) {
+            return this.indexOf(item) >= 0;
+        }
+
+        const a = 'hello';
+        console.log('a :', a.contain('a'));
+
+        const b = [1, 2, 3, 4];
+        console.log('5 :', b.contain(5));
+    </script>
+</body>
+
+</html>
