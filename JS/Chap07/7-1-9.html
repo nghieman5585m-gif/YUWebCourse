@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const divA = document.querySelector('#first'),
+                divB = document.querySelector('#second'),
+                h1 = document.createElement('h1');
+
+            h1.textContent = 'h1';
+
+            const toFirst = () => {
+                divA.appendChild(h1);
+                setTimeout(toSecond, 1000);
+            };
+
+            const toSecond = () => {
+                divB.appendChild(h1);
+                setTimeout(toFirst, 1000);
+            }
+
+            toFirst();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="first">
+        <h1>first div</h1>
+    </div>
+
+    <div id="second">
+        <h1>second div</h1>
+    </div>
+</body>
+
+</html>
