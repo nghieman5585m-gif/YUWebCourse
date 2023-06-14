@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Student {
+            constructor(name, kor, eng, math) {
+                this.name = name;
+                this.kor = kor;
+                this.eng = eng;
+                this.math = math;
+            }
+
+            getSum() {
+                return this.kor + this.eng + this.math;
+            }
+
+            getAvg() {
+                return this.getSum() / 3;
+            }
+
+            toString() {
+                return `${this.name} : Total ${this.getSum()}, Average ${this.getAvg().toFixed(0)}`;
+            }
+        }
+
+        const students = [],
+            getRandScore = () => {
+                return Number(((Math.random() * 100) % 100).toFixed(0));
+            };
+
+        for (let i = 0; i < 5; i++) {
+            students.push(new Student(`Student ${i + 1}`,
+                getRandScore(), getRandScore(), getRandScore()));
+        }
+
+        for (const s of students) {
+            console.log(s + '');
+        }
+    </script>
+</body>
+
+</html>
