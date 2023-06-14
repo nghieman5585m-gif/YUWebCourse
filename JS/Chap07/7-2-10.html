@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const output = document.querySelector('#output'),
+                radios = document.querySelectorAll('[name=pet]');
+
+            radios.forEach((radio) => {
+                radio.addEventListener('change', (event) => {
+                    const cur = event.currentTarget;
+
+                    if (cur.checked) {
+                        output.textContent = `${cur.value} selected`;
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="radio" name="pet" value="dog">
+    <span>dog</span>
+
+    <input type="radio" name="pet" value="cat">
+    <span>cat</span>
+
+    <input type="radio" name="pet" value="hamster">
+    <span>hamster</span>
+
+    <input type="radio" name="pet" value="etc">
+    <span>etc</span>
+
+    <hr>
+
+    <h3 id="output"></h3>
+</body>
+
+</html>

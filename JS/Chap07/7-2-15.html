@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const p = document.querySelector('p'),
+                input = document.querySelector('input'),
+                button = document.querySelector('button'),
+                saved = localStorage.getItem('input');
+
+            if (saved) {
+                input.save = saved;
+                p.textContent = `last ${savedValue}`;
+            }
+
+            input.addEventListener('keyup', (event) => {
+                const value = event.currentTarget.value;
+                localStorage.setItem('input', value);
+            });
+
+            button.addEventListener('click', (event) => {
+                localStorage.clear();
+                input.value = '';
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <p></p>
+    <button>Clear</button>
+
+    <input type="text" />
+</body>
+
+</html>

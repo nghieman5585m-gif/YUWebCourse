@@ -508,3 +508,100 @@ document.addEventListener(eventName, callbackFunc);
 
 ```
 
+- 다음 코드는 `keyCode`를 활용한 예시이다.
+
+```
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const star = document.querySelector('h1');
+            star.style.position = 'absolute';
+
+            let [x, y] = [0, 0];
+            const block = 20,
+                print = () => {
+                    star.style.left = `${x * block}px`;
+                    star.style.top = `${y * block}px`;
+                };
+
+            print();
+
+            const [left, up, right, down] = [37, 38, 39, 40];
+            document.body.addEventListener('keydown', (event) => {
+                switch (event.keyCode) {
+                    case left:
+                        x -= 1;
+                        break;
+                    case up:
+                        y -= 1;
+                        break;
+                    case right:
+                        x += 1;
+                        break;
+                    case down:
+                        y += 1;
+                        break;
+                }
+                print();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>*</h1>
+</body>
+```
+
+## 이벤트 발생 객체
+
+- 이벤트 리스너 내부에서 변수에 접근할 수 없는 경우가 있는데, 두 가지 방법으로 문제를 해결할 수 있다.
+
+1. `event.currentTarget` 속성을 사용한다.
+
+- 이는 `() => {}`와 `function () {}` 형태 모두 사용 가능하다.
+
+2. `this` 키워드를 사용한다.
+
+- 화살표 함수가 아닌 `function () {}` 형태에서 사용한다.
+
+## 3가지 키워드로 정리하는 핵심 포인트
+
+- `이벤트 모델`은 이벤트를 연결하는 방법을 의미합니다.
+- `이벤트 객체`는 이벤트 리스너의 첫 번째 매개변수로 이벤트와 관련된 정보가 들어가있습니다.
+- `이벤트 발생 객체`는 이벤트를 발생시킨 객체를 의미합니다. 이벤트 객체의 `currentTarget` 속성을 사용해서 확인할 수 있습니다.
+
+## 확인 문제
+
+### 1. 다음 이벤트 모델의 이름과 코드를 연결해주세요. 식별자 `listener`는 이벤트 리스너입니다.
+
+- 표준 이벤트 모델 : `document.body.addEventListener('load', listener);`
+- 인라인 이벤트 모델 : `<body onload="listener()"></body>`
+- 고전 이벤트 모델 : `document.body.onload = listener;`
+
+### 2. 다음 중에서 체크 박스와 라디오 버튼 등 입력 양식의 체크 상태를 확인할 때 사용하는 속성을 골라주세요.
+
+1. `selected`
+2. `isChecked`
+3. 정답 : `checked`
+4. `isSelected`
+
+### 3. 다음 이벤트 이름과 이벤트가 발생하는 상황을 연결해주세요.
+
+- `contextmenu` : 마우스 오른쪽 클릭 등으로 컨텍스트 메뉴를 출력할 때
+- `change` : 입력 양식의 값이 변경될 때
+- `keyup` : 키보드 키가 떨어질 때
+- `blur` : 입력 양식의 초점이 해제될 때
+
+### 4. 다음 중 기본 이벤트를 막는 메소드 이름을 골라주세요.
+
+1. 정답 : `preventDefault()`
+2. `prevent()`
+3. `removeDefault()`
+4. `default(false)`
+
+### 5. 다음 중 이벤트 리스너 내부에서 이벤트 발생 객체를 찾는 코드로 알맞은 것을 모두 골라주세요. (이벤트 객체를 event라고 가정합니다.)
+
+1. `event.current`
+2. 정답 : `event.currentTarget`
+3. 정답 : `this`
+4. `this.currentTarget`

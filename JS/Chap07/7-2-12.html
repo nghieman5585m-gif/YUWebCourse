@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let status = false;
+            const checkbox = document.querySelector('input'),
+                link = document.querySelector('a');
+
+            checkbox.addEventListener('change', (event) => {
+                status = event.currentTarget.checked;
+            });
+
+            link.addEventListener('click', (event) => {
+                if (!status) {
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="checkbox">
+    <span>enable link</span>
+    <br>
+    <a href="https://google.com/">Google</a>
+</body>
+
+</html>
